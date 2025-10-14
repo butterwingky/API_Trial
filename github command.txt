@@ -1,0 +1,68 @@
+Step 1 – Make sure you’re inside your project
+
+Run:
+
+cd "C:\Users\khanquah\OneDrive - Keysight Technologies\software\Test Automation Project\dashboard_app\MARS_Dashboard"
+
+
+Then check:
+
+dir
+
+
+You should see your .py, .sln, or other project files listed.
+
+🧩 Step 2 – Initialize Git if needed
+
+If you haven’t done this in this folder yet:
+
+git init
+
+🧩 Step 3 – Add and commit your files
+
+This actually creates the first snapshot and the main branch.
+
+git add .
+git commit -m "Initial commit"
+
+
+If you see “nothing added to commit”, that means all files are already staged — that’s fine.
+
+🧩 Step 4 – Rename the branch to main
+git branch -M main
+
+🧩 Step 5 – Push to GitHub
+git remote add origin https://github.com/butterwingky/MARS_Dashboard.git
+git push -u origin main
+
+
+If it says the remote already exists:
+
+git remote set-url origin https://github.com/butterwingky/API_Trial.git
+git push -u origin main
+
+
+
+
+
+🚀 Best Practices to Avoid Conflicts
+
+Always pull before pushing
+
+git pull origin main
+
+
+Then
+
+git push origin main
+
+
+
+
+Push code:
+Step	Command			Purpose
+1	git status		See what changed
+2	git add .		Stage changes
+3	git commit -m 		"Message"	Save snapshot
+4	git pull origin main	Get latest updates
+5	git push origin main	Upload your changes
