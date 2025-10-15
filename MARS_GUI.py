@@ -4,9 +4,17 @@ import json
 
 def main():
     # Fetch multiple equipment IDs
-    equipment_ids = ["EQ651319", "PA1503","PA1101"]
-    stations = fetch_station_data(equipment_ids)
- 
+    equipment_ids = ["EQ651319", "PA1087","PA1503"]
+
+    API_station = "https://mars.keysight.com/webapi/GetStationByEquipmentID"
+    API_EqInfo = "https://mars.keysight.com/webapi/GetEquipmentInfo"
+
+    API_TEST = "https://mars.keysight.com/webapi/testapi"
+    USER = "Upload_Infoline"
+    PASSWORD = "Muckd$R7b8mHfX6t!r5a4V2G"
+
+    stations = fetch_station_data(API_station,USER,PASSWORD,equipment_ids)
+
     if not stations:
         return
 
@@ -26,7 +34,7 @@ def main():
         print("Station_ID:", df.iloc[1]["Station_ID"])
         
     # Fetch station data
-    stations_all_stationID = fetch_station_data(equipment_ids)
+    stations_all_stationID = fetch_station_data(API_station,USER,PASSWORD,equipment_ids)
 
     if not stations:
      print("No stations returned.")

@@ -4,12 +4,12 @@ import pandas as pd
 import json
 
 # API base URL (without equipment_id)
-API_BASE = "https://mars.keysight.com/webapi/GetStationByEquipmentID"
-API_TEST = "https://mars.keysight.com/webapi/testapi"
-USER = "Upload_Infoline"
-PASSWORD = "Muckd$R7b8mHfX6t!r5a4V2G"
+#API_BASE = "https://mars.keysight.com/webapi/GetStationByEquipmentID"
+#API_TEST = "https://mars.keysight.com/webapi/testapi"
+#USER = "Upload_Infoline"
+#PASSWORD = "Muckd$R7b8mHfX6t!r5a4V2G"
 
-def fetch_station_data(equipment_ids):
+def fetch_station_data(API_BASE,USER,PASSWORD,equipment_ids):
     """
     Fetch station data for one or more equipment IDs.
     Args:

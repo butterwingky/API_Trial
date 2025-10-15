@@ -1,3 +1,4 @@
 ID,Equipment_ID,Station_Type,Station_ID,Active,Date_Activated,Activated_Note,Date_Deactivated,Deactivated_Note,Last_Update_Date,Last_Update_By,Station_Name,Date_Activated_ISO,Last_Update_Date_ISO
 7011976,EQ651319,A,380685,1,19-Aug-2025 10:06:55,,,,19-Aug-2025 10:06:55,mpazilah,NISTCAL03,2025-08-19T10:06:55,2025-08-19T10:06:55
+6988364,PA1087,A,380583,1,07-Aug-2024 10:27:17,,,,07-Aug-2024 10:27:17,mpazilah,PROD8,2024-08-07T10:27:17,2024-08-07T10:27:17
 7000604,PA1503,A,380609,1,26-Feb-2025 10:33:56,,,,26-Feb-2025 10:33:56,mpazilah,BBox1,2025-02-26T10:33:56,2025-02-26T10:33:56
