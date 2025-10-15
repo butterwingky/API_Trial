@@ -4,9 +4,9 @@ import json
 
 def main():
     # Fetch multiple equipment IDs
-    equipment_ids = ["EQ651319", "PA1503"]
+    equipment_ids = ["EQ651319", "PA1503","PA1101"]
     stations = fetch_station_data(equipment_ids)
-
+ 
     if not stations:
         return
 
@@ -25,6 +25,16 @@ def main():
         # Example: get 2nd station Station ID
         print("Station_ID:", df.iloc[1]["Station_ID"])
         
+    # Fetch station data
+    stations_all_stationID = fetch_station_data(equipment_ids)
+
+    if not stations:
+     print("No stations returned.")
+    else:
+        # Use list comprehension to get all Station_IDs
+        station_ids = [station["Station_ID"] for station in stations_all_stationID]
+        print("All Station_IDs:")
+        print(station_ids)
 
     # Save all data to CSV
     df.to_csv("station_data.csv", index=False)

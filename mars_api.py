@@ -19,7 +19,7 @@ def fetch_station_data(equipment_ids):
     """
     if isinstance(equipment_ids, list):
         equipment_ids = ",".join(equipment_ids)  # Convert list to comma-separated string
-
+        print(equipment_ids)
     url = f"{API_BASE}?user={USER}&password={PASSWORD}&equipment_id={equipment_ids}"
 
     try:
